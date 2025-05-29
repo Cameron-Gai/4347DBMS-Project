@@ -1,10 +1,10 @@
-# 🚀 GlobalRides Database Design
+# GlobalRides Database Design
 
 ![ER Diagram](./diagrams/GlobalRides_ERD.png)
 
-A comprehensive relational database schema and implementation for **GlobalRides**, an Uber-and-UberEats-style platform connecting riders, drivers, customers, restaurants, and employees.
+A comprehensive relational database schema and implementation for a dummy company **GlobalRides**, an Uber-and-UberEats-style platform connecting riders, drivers, customers, restaurants, and employees.
 
-## 🎯 Project Overview
+## Project Overview
 
 GlobalRides operates two core services:
 1. **Ride-Hailing**: Matching riders with drivers.
@@ -16,13 +16,13 @@ This project covers:
 - Business-rule enforcement via **constraints** and **triggers**.
 - A suite of **SQL scripts**: schema creation, views, and analytics queries.
 
-## 🗂️ Key Components
+## Key Components
 
 | Component            | Location                                   |
 |----------------------|--------------------------------------------|
 | Entity–Relationship  | `diagrams/GlobalRides_ERD.png`             |
 | Relational Schema    | `schema.sql`                               |
-| Business Rules       | `WriteUp.pdf` (Phase 4 Project Report)     |
+| Business Rules       | `WriteUp.pdf`                              |
 | Views                | `create_view.sql`                          |
 | Analytics Queries    | `sql_queries.sql`                          |
 
@@ -44,7 +44,7 @@ This project covers:
 - **Views** to surface business insights (e.g., LoyalCustomers, ActiveDrivers, PopularMenuItems).
 - **Analytical Queries** for earnings, spending, utilization, and more.
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -55,5 +55,19 @@ This project covers:
 
 1. **Clone** this repo  
    ```bash
-   git clone https://github.com/<your-username>/GlobalRides-DB.git
+   git clone https://github.com/Cameron-Gai/GlobalRides-DB.git
    cd GlobalRides-DB
+
+2. Create the schema
+   ```bash
+   SOURCE schema.sql;
+
+3. Load sample data (optional) and run view definitions
+   ```bash
+   SOURCE create_view.sql;
+
+4. Execute analytics queries
+   ```bash
+   SOURCE sql_queries.sql;
+
+
